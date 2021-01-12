@@ -1,0 +1,25 @@
+<app-menu></app-menu>
+<section class="heading">
+    <span class="page-title font-weight-bold font-italic"> [{{title}}]</span>
+    <a routerLink='/actor-create'>
+        <img width='20' height='20' src='assets/add-icon.png' title='Add New'>
+    </a>
+</section>
+<table class="table table-sm table-striped">
+    <thead>
+        <tr>
+        <th>ID</th><th>Name</th><th>Gender</th><th>Birth Date</th>
+    </tr>
+    </thead>
+    <tbody>
+        <!--the property "actors" must be defined in your actor-list component ts file-->
+        <tr *ngFor='let actor of actors'>
+        <td>{{actor.id}}</td>
+        <td>{{actor.firstName + " " + actor.lastName}}</td>
+        <td>{{actor.gender}}</td>
+        <td>{{actor.birthDate}}</td>
+        <td>Detail | Edit</td>
+    </tr>
+    </tbody>
+
+</table>

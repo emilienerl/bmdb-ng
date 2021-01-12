@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'bmdb-ng';
+  // title = 'bmdb-ng';
+  // // create an array named movies and populate with some movies
+  // movies = ["16 Candles", "Bridemaids", "Love Actually", "Goonies", "Elf"];
 }
