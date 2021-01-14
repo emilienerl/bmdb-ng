@@ -8,17 +8,25 @@
 <table class="table table-sm table-striped">
     <thead>
         <tr>
-        <th>ID</th><th>Title</th><th>Year</th><th>Action</th>
-    </tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Year</th>
+            <th>Action</th>
+        </tr>
     </thead>
     <tbody>
         <!--the property "movies" must be defined in your movie-list component ts file-->
         <tr *ngFor='let movie of movies'>
-        <td>{{movie.id}}</td>
-        <td>{{movie.title}}</td>
-        <td>{{movie.year}}</td>
-        <td>Detail | Edit</td>
-    </tr>
+            <td>{{movie.id}}</td>
+            <td>{{movie.title}}</td>
+            <td>{{movie.year}}</td>
+            <!--router link depends on a route-->
+            <td><a routerLink='/movie-detail/{{movie.id}}'>
+                    <img width='20' height='20' src='assets/details.png' title='Movie Details'>
+                </a> | <a routerLink='/movie-edit/{{movie.id}}'>
+                    <img width='20' height='20' src='assets/pencil-icon.png' title='Movie Edit'></a>
+            </td>
+        </tr>
     </tbody>
 
 </table>
