@@ -1,6 +1,16 @@
+<nav>
+    <ul>
+      BMDB
+      <li *ngFor='let item of menuItems' title="{{item.tooltip}}">
+        <a routerLink="{{item.href}}">{{item.display}}</a>
+      </li>
+    </ul>
+  </nav>
+<!--
 <table class='table table-sm'>
     <tr>
         <th><a routerLink='/movie-list'>Movie</a></th>
         <th><a routerLink='/actor-list'>Actor</a></th>
     </tr>
 </table>
+-->
