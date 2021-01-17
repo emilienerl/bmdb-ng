@@ -15,7 +15,7 @@
         <tr *ngFor='let credit of credits'>
         <td>{{credit.id}}</td>
         <td>{{credit.actor.firstName + " " + credit.actor.lastName}}</td>
-        <td>{{credit.movie.title}}-{{credit.movie.year}}</td>
+        <td>{{credit.movie.title}} - {{credit.movie.year}}</td>
         <td>{{credit.role}}</td>
         <td><a routerLink='/credit-detail/{{credit.id}}'>
             <img width='20' height='20' src='assets/details.png' title='Credit Details'>

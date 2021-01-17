@@ -1,3 +1,4 @@
+<app-menu></app-menu>
 <section class="heading">
     <span class='component-title'>[{{title}}]</span>
   </section>
@@ -19,7 +20,7 @@
         </td>
         <td>
             <select [(ngModel)]="credit.movie" class="rounded">
-                <option *ngFor='let movie of movies' [ngValue]='movie'>{{movie.title + "["+ movie.year+"]"}}</option>
+                <option *ngFor='let movie of movies' [ngValue]='movie'>{{movie.title + "[" + movie.year+"]"}}</option>
             </select>
         </td>
       </tr>
