@@ -36,4 +36,8 @@ export class UserService {
   delete(id) : Observable<User> {
     return this.http.delete(URL+'/'+id) as Observable<User>;
   }
-}
+    // login
+    login(user: User) : Observable<User> {
+      return this.http.post(URL+'/login', user) as Observable<User>;
+    }
+    }

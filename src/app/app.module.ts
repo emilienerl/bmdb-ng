@@ -23,6 +23,7 @@ import { UserListComponent } from './feature/user/user-list/user-list.component'
 import { UserCreateComponent } from './feature/user/user-create/user-create.component';
 import { UserEditComponent } from './feature/user/user-edit/user-edit.component';
 import { UserDetailComponent } from './feature/user/user-detail/user-detail.component';
+import { UserLoginComponent } from './feature/user/user-login/user-login.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { UserDetailComponent } from './feature/user/user-detail/user-detail.comp
     UserListComponent,
     UserCreateComponent,
     UserEditComponent,
-    UserDetailComponent
+    UserDetailComponent,
+    UserLoginComponent
   ],
   imports: [
     BrowserModule,
