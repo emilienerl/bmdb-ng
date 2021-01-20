@@ -14,7 +14,7 @@ export class SystemService {
 
   //not applicable for bmdb as there is no 'admin' property on user
   //function isAdmin that uses a ternary operator, we want to know if the login user is null or does the user have a login
-  //this returns true or false for if a user is a Admin
+  //this returns true or false for if a user is a Admin, so if the login user is null return false, otherwise if it is a login user return true
   //isAdmin(): boolean {
   //  return (this.loggedInUser == null) ? false : this.loggedInUser.admin;
   //}
