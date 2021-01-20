@@ -37,6 +37,7 @@ export class UserService {
     return this.http.delete(URL+'/'+id) as Observable<User>;
   }
     // login
+    //where front end calls the back end login
     login(user: User) : Observable<User> {
       return this.http.post(URL+'/login', user) as Observable<User>;
     }
