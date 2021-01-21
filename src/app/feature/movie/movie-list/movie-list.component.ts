@@ -18,7 +18,7 @@ export class MovieListComponent implements OnInit {
 
   ngOnInit(): void {
     // if coming from login we should have an authenticated user inside sysSvc
-    console.log('loggedInUser?', this.sysSvc.loggedInUser);
+    console.log('movie list - loggedInUser?', this.sysSvc.loggedInUser);
     //populate list of movies
     this.movieSvc.getAll().subscribe(
       resp => {
