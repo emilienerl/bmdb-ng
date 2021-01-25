@@ -8,7 +8,7 @@
 <table class="table table-sm table-striped">
     <thead>
         <tr>
-            <th>ID</th>
+            <th><button [ngClass]='colClasses' (click)="sortBy('id')">ID</button></th>
             <th>Title</th>
             <th>Year</th>
             <th>Action</th>
@@ -16,7 +16,8 @@
     </thead>
     <tbody>
         <!--the property "movies" must be defined in your movie-list component ts file-->
-        <tr *ngFor='let movie of movies'>
+        <!--name of the pipe is sort-->
+        <tr *ngFor='let movie of movies | sort:sortCriteria:sortOrder'>
             <td>{{movie.id}}</td>
             <td>{{movie.title}}</td>
             <td>{{movie.year}}</td>
